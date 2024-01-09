@@ -1,0 +1,23 @@
+{
+  "name": "password_validator",
+  "version": "1.0.0",
+  "description": "NPM package for validating passwords.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilmandoliya/password_validator.git"
+  },
+  "keywords": [
+    "Password",
+    "Validator"
+  ],
+  "author": "Sahil Mandoliya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilmandoliya/password_validator/issues"
+  },
+  "homepage": "https://github.com/sahilmandoliya/password_validator#readme"
+}
