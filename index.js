@@ -1,13 +1,13 @@
-class validPassword{
+class ValidPassword{
     constructor(password){
         this.password=password;
     }
-    isValid(){
-       return this.password.length>=8 ? true : false;
+    isValidLength(){
+       return this.password.length>=8;
     }
 
     hasUpperCaseCharacter(){
-        return this.password.toLowerCase() != this.password;
+        return /[A-Z]/.test(this.password);
     }
 
     hasNumber(){
@@ -16,7 +16,7 @@ class validPassword{
 };
 
 function validatePassword(password){
-    const isValidPassword=new validPassword(password);
+    const isValidPassword=new ValidPassword(password);
     return isValidPassword;
 }
 
