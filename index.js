@@ -10,6 +10,10 @@ class ValidPassword{
         return /[A-Z]/.test(this.password);
     }
 
+    hasLowerCaseCharacter(){
+        return /[a-z]/.test(this.password);
+    }
+
     hasNumber(){
         return /\d/.test(this.password);
     }
@@ -30,8 +34,6 @@ class ValidPassword{
             this.hasLowerCaseCharacter() &&
             this.hasNumber() &&
             this.hasSpecialCharacters() &&
-            this.hasNoSpaces() &&
-            this.hasNoConsecutiveRepeatedCharacters() &&
             this.isNotCommonPassword()
         );
     }
