@@ -23,8 +23,13 @@ class ValidPassword{
     }
 
     isNotCommonPassword() {
-        const commonPasswords=["password", "123456", "qwerty", "12345678"]
+        const commonPasswords=["password", "123456", "qwerty", "12345678", "admin", ]
         return !commonPasswords.includes(this.password.toLowerCase());
+    }
+
+    hasNotWhitespace(){
+        const pattern=/\s/;
+        return !pattern.test(this.password);
     }
 
     isStrongPassword() {
@@ -34,7 +39,8 @@ class ValidPassword{
             this.hasLowerCaseCharacter() &&
             this.hasNumber() &&
             this.hasSpecialCharacters() &&
-            this.isNotCommonPassword()
+            this.isNotCommonPassword() && 
+            this.hasNotWhitespace()
         );
     }
 };
