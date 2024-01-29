@@ -38,7 +38,7 @@ class ValidPassword{
             this.hasUpperCaseCharacter() &&
             this.hasLowerCaseCharacter() &&
             this.hasNumber() &&
-            this.hasSpecialCharacters() &&
+            this.hasSpecialCharacter() &&
             this.isNotCommonPassword() && 
             this.hasNotWhitespace()
         );
