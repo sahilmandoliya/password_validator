@@ -1,1 +1,1 @@
-## NPM package designed for validating passwords.
+## NPM package designed for validating passwords
