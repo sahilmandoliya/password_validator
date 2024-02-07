@@ -19,7 +19,7 @@ class ValidPassword {
         return /\d/.test(this.password);
     }
 
-    hasSpecialCharacter() {
+    hasSpecialCharacter(){
         return /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(this.password);
     }
 
@@ -38,8 +38,8 @@ class ValidPassword {
             this.hasUpperCaseCharacter() &&
             this.hasLowerCaseCharacter() &&
             this.hasNumber() &&
-            this.hasSpecialCharacter() &&
-            this.isNotCommonPassword() &&
+            this.hasSpecialCharacters() &&
+            this.isNotCommonPassword() && 
             this.hasNotWhitespace()
         );
     }
